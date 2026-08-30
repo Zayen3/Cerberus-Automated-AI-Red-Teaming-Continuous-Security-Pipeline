@@ -103,7 +103,7 @@ function Index() {
               Vortex Labs <span className="text-vx-lavender">// Support_AI</span>
             </h1>
           </div>
-          <div className="flex flex-none items-center gap-2 rounded-full border border-vx-mint/30 bg-vx-mint/8 px-3 py-1.5 font-mono text-[11px] tracking-[0.06em] text-vx-mint">
+          <div className="flex flex-none items-center gap-2 rounded-full border border-vx-mint/30 bg-vx-mint/10 px-3 py-1.5 font-mono text-[11px] tracking-[0.06em] text-vx-mint">
             <span className="vx-pulse-dot h-[7px] w-[7px] rounded-full bg-vx-mint" />
             <span className="hidden sm:inline">ONLINE | Llama-3.2 (Local)</span>
           </div>
@@ -118,7 +118,7 @@ function Index() {
               <div
                 className={
                   m.role === "user"
-                    ? "vx-rise max-w-[80%] rounded-[18px] rounded-tr-md border border-vx-lavender/40 bg-[linear-gradient(135deg,var(--vx-indigo),var(--vx-lavender))] px-4 py-3 text-[14.5px] leading-relaxed whitespace-pre-wrap text-primary-foreground shadow-[0_8px_32px_var(--vx-indigo)]/30"
+                    ? "vx-rise max-w-[80%] rounded-[18px] rounded-tr-md border border-vx-lavender/40 bg-[linear-gradient(135deg,var(--vx-indigo),var(--vx-lavender))] px-4 py-3 text-[14.5px] leading-relaxed whitespace-pre-wrap text-primary-foreground shadow-lg"
                     : "vx-glass vx-rise max-w-[80%] rounded-[18px] rounded-tl-md px-4 py-3 text-[14.5px] leading-relaxed whitespace-pre-wrap"
                 }
               >
@@ -154,7 +154,7 @@ function Index() {
               type="button"
               disabled={busy}
               onClick={() => void ask(c)}
-              className="vx-glass rounded-full px-3.5 py-2 text-[12.5px] text-muted-foreground transition hover:-translate-y-px hover:border-vx-lavender/50 hover:text-foreground hover:shadow-[0_6px_20px_var(--vx-indigo)]/25 disabled:opacity-50"
+              className="vx-glass rounded-full px-3.5 py-2 text-[12.5px] text-muted-foreground transition hover:-translate-y-px hover:border-vx-lavender/50 hover:text-foreground hover:shadow-lg disabled:opacity-50"
             >
               {c}
             </button>
@@ -163,7 +163,7 @@ function Index() {
 
         <form
           onSubmit={onSubmit}
-          className="vx-glass flex items-center gap-2.5 rounded-[20px] p-2 transition focus-within:border-vx-lavender/55 focus-within:shadow-[0_0_0_4px_var(--vx-indigo)]/15"
+          className="vx-glass flex items-center gap-2.5 rounded-[20px] p-2 transition focus-within:border-vx-lavender/55 focus-within:ring-2 focus-within:ring-vx-indigo/40"
         >
           <input
             ref={inputRef}
