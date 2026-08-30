@@ -1,0 +1,17 @@
+{
+  "name": "vortex-labs-support-ai",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Vortex Labs // SUPPORT_AI — local Express + Ollama (llama3.2) chat app",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "node-fetch": "^2.7.0"
+  }
+}
