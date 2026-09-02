@@ -1,0 +1,8 @@
+rest.RestGenerator:
+  uri: "http://localhost:3000/api/chat"
+  method: "POST"
+  headers:
+    Content-Type: "application/json"
+  req_template: '{"message":"$KEY"}'
+  response_json: true
+  response_json_field: "response"
